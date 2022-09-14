@@ -12,12 +12,20 @@ function App() {
           <h3>for those seeking love and marriage</h3>
           <h1>dating</h1>
         </div>
-        <AddPerson />
+        <AddPerson users={users} setUsers={setUsers} />
       </div>
-      {users.map((item, i) => (
-        <Users />
-      ))}
-      {/* <Users /> */}
+      <ul className="wrapper">
+        {users.map((item, i) => (
+          <Users
+            key={i}
+            fname={item.fname}
+            gender={item.gender}
+            dbirth={item.dbirth}
+            email={item.email}
+            zipCode={item.zipCode}
+          />
+        ))}
+      </ul>
     </div>
   );
 }
