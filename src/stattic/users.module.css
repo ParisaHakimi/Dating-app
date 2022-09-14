@@ -1,0 +1,35 @@
+.wrapper {
+  /* background-color: pink; */
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  /* margin-top: 20px; */
+}
+.users {
+  border: 1px solid #ccc;
+  width: 32%;
+  padding: 10px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.userInfo > h3 {
+  color: #000;
+}
+.userBtns {
+  /* background-color: olive; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 10px; */
+}
+.userBtns > button {
+  padding: 0.5rem;
+  cursor: pointer;
+  /* color: #372C3E; */
+  color: #823545;
+}
