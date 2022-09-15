@@ -7,6 +7,11 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 20px;
+  transition: 0.5s;
+}
+.users:hover {
+  background-color: rgba(249, 186, 70, 0.73);
+  cursor: pointer;
 }
 .userInfo > h3 {
   color: #000;

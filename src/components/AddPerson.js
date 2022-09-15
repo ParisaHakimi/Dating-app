@@ -15,6 +15,7 @@ const AddPerson = ({ users, setUsers }) => {
       dbirth: dbirth,
       email: email,
       zipCode: zipCode,
+      money: 10,
     };
     setUsers([...users, user]);
     setFname("");

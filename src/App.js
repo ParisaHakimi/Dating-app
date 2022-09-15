@@ -15,14 +15,18 @@ function App() {
         <AddPerson users={users} setUsers={setUsers} />
       </div>
       <ul className="wrapper">
-        {users.map((item, i) => (
+        {users.map((item, index) => (
           <Users
-            key={i}
+            key={index}
+            index={index}
             fname={item.fname}
             gender={item.gender}
             dbirth={item.dbirth}
             email={item.email}
             zipCode={item.zipCode}
+            users={users}
+            setUsers={setUsers}
+            money={item.money}
           />
         ))}
       </ul>
